@@ -1,11 +1,3 @@
-<?php
-    session_start();
-
-    if(isset($_SESSION['usuario'])){
-        header("location: bienvenida.php");
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,16 +23,6 @@
                     <button id="btn-registrarse">Regístrarse</button>
                 </div>
             </div>
-
-            <!-- Mensajes de error o éxito -->
-            <?php if (isset($_SESSION['message'])): ?>
-                <div class="mensaje visible">
-                    <?php
-                    echo $_SESSION['message'];
-                    unset($_SESSION['message']); // Limpiar el mensaje después de mostrarlo
-                    ?>
-                </div>
-            <?php endif; ?>
             
             <!-- Formmulario de login y register -->
             <div class="contenedor-loginregister">
