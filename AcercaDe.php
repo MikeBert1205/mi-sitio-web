@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilosAcercaDe.css" />
+  <link rel="stylesheet" href="estilosGenerales.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+  <title>Recycling Center</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-success" href="index.php" style="font-weight: bold">
+        <img src="./imagenes/logo-recycling.png" alt="Bootstrap" class="img-logo">
+        Recycling Center
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="Principio.php">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="Reciclaje-Envase.php">Reciclaje</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="CER.php">CER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Comunicacion.php">Comunicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="informacionTecnica.php">Inf. Tecnica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cycle-reto.php">Cycle-Reto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="AcercaDe.php">Acerca de</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="content">
+      <div class="banner-text-header">
+        <h3>¿Quiénes somos?</h3>
+      </div>
+      <div class="banner-text">
+        <p>
+          Recycling center, es una fundación en la cual busca promover la
+          concientización sobre el reciclaje.
+        </p>
+      </div>
+      <div class="banner-text">
+        <p>Por un Ciudad Juárez más limpio.</p>
+      </div>
+      <div class="banner-text">
+        <p>
+          Somos un grupo de jóvenes que unimos esfuerzos con la iniciativa de
+          poder desarrollar una sustentabilidad ambiental.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2 class="text-center fw-bolder mt-5">¿Qué hacemos?</h2>
+      <p class="text-hacemos">
+        Promover el reciclaje con una variedad de personas llegando así a
+        hacer un cambio positivo en la sociedad. Recycling center concientiza
+        individual y colectivamente a la sociedad
+      </p>
+
+      <p class="fs-4 p-3 mt-5 text-center">
+        <strong class="text-focus">Reciclyng</strong> center
+        <strong class="text-focus">concientiza</strong> individual y
+        colectivamente a la <strong class="text-focus">sociedad</strong>
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-icon">
+          <img src="./imagenes/icon-tierra.png" alt="Icono 1" class="icon-step" />
+          <!-- Replace with your icon path -->
+        </div>
+        <h3>Sensibilizamos sobre la importancia de una vida sustentable</h3>
+      </div>
+      <div class="step">
+        <div class="step-icon">
+          <img src="./imagenes/icon-hoja.png" alt="Icono 2" class="icon-step" />
+          <!-- Replace with your icon path -->
+        </div>
+        <h3>Promovemos la reciclabilidad de los envases y empaques.</h3>
+      </div>
+      <div class="step">
+        <div class="step-icon">
+          <img src="./imagenes/icon-planta.png" alt="Icono 3" class="icon-step" />
+          <!-- Replace with your icon path -->
+        </div>
+        <h3>Sensibilizamos sobre la importancia de una vida sustentable</h3>
+      </div>
+      <div class="step">
+        <div class="step-icon">
+          <img src="./imagenes/icon-botella.png" alt="Icono 4" class="icon-step" />
+          <!-- Replace with your icon path -->
+        </div>
+        <h3>Promovemos la reciclabilidad de los envases y empaques.</h3>
+      </div>
+    </div>
+
+    <div class="container-mision">
+      <div class="card-mision">
+        <div>
+          <h2 class="text-center fw-bolder mt-5 text-header-mision">
+            Misión
+          </h2>
+          <p class="text-mision fw-semiBold">
+            Fomentar desde temprana edad, la separación de envases y empaques
+            posconsumo, por medio de la educación ambiental y programas de
+            acopio.
+          </p>
+        </div>
+        <img src="./imagenes/mision.jpg" alt="mision" />
+      </div>
+
+      <div class="card-mision">
+        <img src="./imagenes/vision.jpeg" alt="vision" />
+        <div>
+          <h2 class="text-center fw-bolder mt-5 text-header-mision">
+            Visión
+          </h2>
+          <p class="text-mision fw-semiBold">
+            Ser la asociación líder y referente en responsabilidad ambiental,
+            que logre la sustentabilidad y correcta gestión de los residuos de
+            envases y empaques, para su aprovechamiento.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3 class="text-center fw-bold fs-1 text-focus">Nuestros orígenes</h3>
+      <p class="p-4 fs-6 text-left">
+        En Ciudad Járez, <strong class="text-focus">México</strong>,  la falta
+        de educación ambiental, infraestructura y políticas públicas para la
+        gestión y disposición final de los
+        <strong class="text-focus">residuos</strong> de envases y empaques,
+        generaron dos <strong class="text-focus">problemáticas</strong>
+      </p>
+      <ul class="numbered-list">
+        <li>
+          <div class="number-circle">1</div>
+          <div class="list-text">La contaminación visual.</div>
+        </li>
+        <li>
+          <div class="number-circle">2</div>
+          <div class="list-text">Deficiente recolección.</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="text-center bg-body-tertiary">
+    <!-- Grid container -->
+    <h2 id="texto2" class="custom-text">Contactanos</h2>
+    <p id="texto2" class="custom-text">¡Estamos aquí para ayudarte y responder a tus preguntas!</p>
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.facebook.com/profile.php?id=61563548082469&mibextid=ZbWKwL" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.instagram.com/recy_clingcenter?utm_source=qr&igsh=MWRvbzZocTlscHg4cA==" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+
+        <!-- WhatsApp -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://chat.whatsapp.com/JcU5aFLBEC3HT05He0uZXw" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-whatsapp"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body" href="index.php">Recycling Center</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

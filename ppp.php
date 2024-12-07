@@ -1,0 +1,153 @@
+<?php
+
+session_start();
+include('php/conexion_bd.php');
+
+if ($_SESSION['rol'] !== 'usuario') {
+    header("Location: login_usuario_bd.php");
+    exit();
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="ppp.css"/>
+  <link rel="stylesheet" href="estilosGenerales.css"/>
+  <link rel="stylesheet" href="Gen.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
+  <title>Recycling Center</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #038944;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    .navbar .user-info {
+      ont-size: 1rem;
+    }
+    .navbar .logout {
+      font-size: 0.9rem;
+      background-color: #444;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .container {
+      padding: 20px;
+    }
+    #texto2 {
+      font-weight: 500;
+      color: black;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+      <div class="logo">
+          <h1>Cyclo-Reto</h1>
+          <a href="bienvenida.php" class="logout">Regresar</a>
+      </div>
+      <div class="user-info">
+          Bienvenido, <?php echo $_SESSION['nombre']; ?>
+          <a href="php/logout.php" class="logout">Cerrar sesión</a>
+      </div>
+  </div>
+
+  <header class="header">
+    <div class="content centrar">
+      <div class="banner-text-header">
+        <h3>Conservación de suelos y reforestación</h3>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <br><br>
+    <h2>Metas a cumplir</h2>
+    <p>Fomentar la participación comunitaria en la <b>reforestación</b>.</p>
+    <p><b>¡Empezamos con nuestro reto, adoptemos un árbol!</b></p>
+    <br>
+    <h2>Objetivos</h2>
+    <br>
+    <p>Cada participante o grupo de participantes adopta un <b>árbol para plantar y cuidar durante un año.</b></p>
+    <p>Organizar eventos de plantación de árboles en áreas degradadas.</p>
+    <p>Los participantes deben <b>documentar</b> el crecimiento del árbol y las prácticas de cuidado utilizadas</p>
+    <br><br><br>
+    <h2>Beneficios</h2>
+    <br>
+    <p><b>Promueve</b> la educación ambiental y el sentido de responsabilidad.</p>
+    <p>Aumenta la <b>cobertura forestal y mejora la calidad del aire.</b></p>
+    <br><br><br>
+
+    <h1>Subir Imágenes</h1>
+    <br><br>
+    <form action="php/uploads_php/upload_file.php" method="POST" enctype="multipart/form-data">
+        <label for="file">Selecciona una imagen:</label>
+        <input type="file" id="file" name="file" accept="image/*" required>
+        <button type="submit">Subir Imagen</button>
+    </form>
+
+  </div>
+
+
+
+  <footer class="text-center bg-body-tertiary">
+    <!-- Grid container -->
+    <h2 id="texto2" class="custom-text">Contactanos</h2>
+    <p id="texto2" class="custom-text">¡Estamos aquí para ayudarte y responder a tus preguntas!</p>
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.facebook.com/profile.php?id=61563548082469&mibextid=ZbWKwL" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.instagram.com/recy_clingcenter?utm_source=qr&igsh=MWRvbzZocTlscHg4cA==" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+
+        <!-- WhatsApp -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://chat.whatsapp.com/JcU5aFLBEC3HT05He0uZXw" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-whatsapp"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body" href="index.php">Recycling Center</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

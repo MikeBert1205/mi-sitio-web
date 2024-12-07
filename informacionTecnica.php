@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilosInformacionTecnica.css" />
+    <link rel="stylesheet" href="estilosGenerales.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
+    <title>Comunicación Recycling Center</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-success" href="index.php" style="font-weight: bold">
+            <img src="./imagenes/logo-recycling.png" alt="Bootstrap" class="img-logo">
+            Recycling Center
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="Principio.php">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="Reciclaje-Envase.php">Reciclaje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="CER.php">CER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="Comunicacion.php">Comunicación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="informacionTecnica.php">Inf. Tecnica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="cycle-reto.php">Cycle-Reto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="AcercaDe.php">Acerca de</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="gradient-div">
+        <h2>Cifras y estadísticas</h2>
+        <h3>
+            Los datos que debes conocer
+        </h3>
+    </div>
+
+    <div class="container contenedor-redes mb-5">
+        <div class="row cards">
+            <div class="col-12 mt-4 mb-2 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2>Sabías que...</h2>
+                        <p class="verde">En Juárez el servicio de recolección de basura recoge en promedio 1,200
+                            toneladas diarias</p>
+                        <img src="./imagenes/image 19.png" style="width: 10rem;" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-4 mb-2 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2>Sabías que...</h2>
+                        <p class="verde">Solo el 9% de envases y plásticos que se generan en Juárez se reciclan con
+                            éxito. Los plásticos (PET, HDPE, LDPE, PP, PS) son los más reciclados.</p>
+                        <img src="./imagenes/logo-reciclaje.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-4 mb-2 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2>Sabías que...</h2>
+                        <p class="verde">Al día se consumen 200.000 toneladas de
+                            botellas de este material; el 70% se recicla.</p>
+                        <img src="./imagenes/image 20.png" style="width: 10rem;" alt="" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 mt-4 mb-2 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2>Sabías que...</h2>
+                        <p class="verde">En Juárez el servicio de recolección de basura recoge en promedio 1,200
+                            toneladas diarias</p>
+                        <img src="./imagenes/image 22.png" style="width: 10rem;" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-4 mb-2 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2>Sabías que...</h2>
+                        <p class="verde">Solo el 9% de envases y plásticos que se generan en Juárez se reciclan con
+                            éxito. Los plásticos (PET, HDPE, LDPE, PP, PS) son los más reciclados.</p>
+                        <img src="./imagenes/logo-reciclaje.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-4 mb-2 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2>Sabías que...</h2>
+                        <p class="verde">Al día se consumen 200.000 toneladas de
+                            botellas de este material; el 70% se recicla.</p>
+                        <img src="./imagenes/image 21.png" style="width: 10rem;" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <h2 id="texto2" class="custom-text">Contactanos</h2>
+        <p id="texto2" class="custom-text">¡Estamos aquí para ayudarte y responder a tus preguntas!</p>
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.facebook.com/profile.php?id=61563548082469&mibextid=ZbWKwL" role="button"
+              data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
+    
+            <!-- Instagram -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.instagram.com/recy_clingcenter?utm_source=qr&igsh=MWRvbzZocTlscHg4cA==" role="button"
+              data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+    
+            <!-- WhatsApp -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://chat.whatsapp.com/JcU5aFLBEC3HT05He0uZXw" role="button"
+              data-mdb-ripple-color="dark"><i class="bi bi-whatsapp"></i></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-body" href="index.php">Recycling Center</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

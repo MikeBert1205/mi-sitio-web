@@ -1,0 +1,318 @@
+
+.header {
+    background-image: url('imagenes/ppp.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header .content {
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 48px;
+}
+
+.banner-text-header {
+    background-color: #1d88496e;
+    color: #09C6FF;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 80%;
+    font-weight: 900;
+}
+.banner-text {
+    background-color: rgba(3,137,68,0.25);
+    color: white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 80%;
+    font-weight: 600;
+}
+
+.banner-text h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.container h2, .container p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+
+.banner-text p {
+    margin: 5px 0 0 0;
+}
+
+.text-hacemos{
+    text-align: left;
+    font-size: 14;
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.text-focus{
+    color: #038944;
+    font-weight: 800;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    background-color: #94EEC0;
+    padding: 20px;
+    margin-bottom: 120px;
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+    height: 213px;
+}
+
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #94EEC0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.icon-step{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: fill;
+    background-color: #ECF0F1;
+    border-radius: 100%;
+}
+.step:last-child::after {
+    display: none;
+}
+
+.step h3 {
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: #196237;
+}
+
+.container-mision{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+.text-header-mision{
+    color: white;
+}
+.text-mision{
+    color: white;
+}
+.card-mision{
+    background-color: #038944;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+.card-mision > img {
+    display: none;
+}
+
+.numbered-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.numbered-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.number-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #038944;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.list-text {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#eliminarcontenedor {
+    width: 23.25rem;
+    height: 38.5625rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+
+}
+#eliminar2 {
+    margin-left: .7rem;
+    width: 37.841686717998rem;
+    height: 38.176875rem;
+}
+
+#texto {
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ocultar-s{
+    display: none;    
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .col-md-6.custom-bg {
+        width: 100%; /* Asegura que el div ocupe el ancho completo */
+        padding: 20px; /* Ajusta el padding según sea necesario */
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .header .content {
+        max-width: 100%;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0;
+    }
+    .banner-text-header{
+        width: 50%;
+        align-self: center;
+    }
+
+    .banner-text {
+        margin-bottom: 15px;
+        background-color: #19623746;
+        width: 50%;
+        align-self: flex-start;
+    }
+    .text-hacemos{
+        display: none;
+    }
+    .steps{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .step {
+        width: 45%;
+        margin-bottom: 80px;
+    }
+    .step::after {
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+
+    .card-mision{
+        background-color: #fff;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .text-header-mision{
+        color: #196237;
+        font-weight: bolder;
+        font-size: 64px;
+    }
+    .text-mision{
+        color: #196237;
+        font-weight: bolder;
+        font-size: 20px;
+        text-align: center;
+        align-self: flex-start;
+        padding: 10px;
+    }
+    .card-mision > img {
+        display: block;
+        width: 45%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .ocultar-s{
+        display: inline;
+    }
+
+    .ocultar-s :first-child{
+        margin-top: 19.085rem;
+    }
+
+    .ocultar{
+        display: none;
+    }
+}
+
+/*@media (min-width: 700px) {
+    #preview {
+        width: 31.4375rem;
+        height: 49.5rem;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }  
+}*/

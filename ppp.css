@@ -1,0 +1,98 @@
+.body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-image: url('imagenes/ppp.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.header ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.header li {
+    padding: 0 20px;
+}
+
+.header #branding {
+    margin-bottom: 10px;
+}
+
+.header #branding h1 {
+    margin: 0;
+}
+
+#main-content {
+    padding: 50px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    background: #3bc046;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    clear: both;
+}
+
+.image-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.image-right img {
+    max-width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    margin-left: 70px; /* Ajusta el margen según sea necesario */
+}
+
+.image-right .text {
+    flex: 1;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.title {
+    margin-top: 20px;
+}

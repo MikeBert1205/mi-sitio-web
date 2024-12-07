@@ -1,0 +1,65 @@
+.header {
+    background-image: url('imagenes/fondo-climatico.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.texto{
+    font-weight: 500;
+    color: #038944;;
+    font-style: normal;
+}
+
+.subtitulo{
+    font-weight: 500;
+    color: #fff;;
+    font-style: normal;
+    background-color: #038944;
+    padding: 10px 15px;
+    width: 150px !important;
+    border-radius: 25px;
+    text-align: center;
+}
+.enfasis{
+    font-weight: 900;
+    color: #038944;
+    font-style: normal;
+}
+
+
+@media (min-width: 992px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .header .content {
+        max-width: 100%;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0;
+    }
+    .banner-text-header{
+        width: 50%;
+        align-self: center;
+    }
+
+}

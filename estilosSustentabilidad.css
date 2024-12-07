@@ -1,0 +1,343 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    background-image: url('./imagenes/image\ 37.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 48px;
+}
+
+.section {
+    margin-top: 5rem;
+    align-items: center !important;
+    padding: 5px;
+}
+
+.botellasignal{
+    height: 5rem;
+    width: 5rem;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.banner-text-header {
+    background-color: #196237;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 80%;
+    font-weight: 800;
+}
+.banner-text {
+    background-color: rgba(3,137,68,0.25);
+    color: white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 80%;
+    font-weight: 600;
+}
+
+.banner-text h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.banner-text p {
+    margin: 5px 0 0 0;
+}
+.text-hacemos{
+    text-align: left;
+    font-size: 14;
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-focus{
+    color: #038944;
+    font-weight: 800;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    background-color: #94EEC0;
+    padding: 20px;
+    margin-bottom: 120px;
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+    height: 193px;
+}
+
+.step::after {
+    content: '';
+    width: 8px;
+    height: 80px;
+    background-color: #2e7d32;
+    position: absolute;
+    left: 50%;
+    bottom: -80px;
+    transform: translateX(-50%);
+}
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #94EEC0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.icon-step{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: fill;
+    background-color: #038944;
+    border-radius: 100%;
+}
+.step:last-child::after {
+    display: none;
+}
+
+.step h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #196237;
+}
+
+.container-mision{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+.text-header-mision{
+    color: white;
+}
+.text-mision{
+    color: white;
+}
+.card-mision{
+    background-color: #038944;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+.card-mision > img {
+    display: none;
+}
+
+.imagenbote{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.imagenPaso{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.card-mision > h2 {
+    margin-left: 25rem;
+    margin-right: 2rem;
+}
+
+.numbered-list {
+    list-style: none;
+    padding-left: 0;
+    align-items: center;
+}
+
+.numbered-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.number-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #038944;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.list-text {
+    width: 15 rem;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.container-mision,
+.header .content,
+.card-mision {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.section,
+.card,
+.banner-text-header,
+.banner-text {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+@media (min-width: 992px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .header .content {
+        max-width: 100%;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0;
+    }
+    .banner-text-header{
+        width: 50%;
+    }
+
+    .banner-text {
+        margin-bottom: 15px;
+        background-color: #19623746;
+        width: 50%;
+        align-self: flex-start;
+    }
+    .text-hacemos{
+        display: none;
+    }
+    .steps{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .step {
+        width: 45%;
+        margin-bottom: 80px;
+    }
+    .step::after {
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+
+    .card-mision{
+        background-color: #fff;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .text-header-mision{
+        color: #fff;
+        font-weight: bolder;
+        font-size: 44px;
+        background-color: #038944;
+        border-radius: 25rem;
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-mision{
+        color: #333333;
+        font-weight: bolder;
+        font-size: 20px;
+        text-align: center;
+        align-self: flex-start;
+        padding: 10px;
+    }
+
+    .text-mision2{
+        color: #333333;
+        font-weight: bolder;
+        font-size: 20px;
+        text-align: center;
+        align-self: flex-start;
+        padding: 10px;
+        width: 70%;
+    }
+
+    .card-mision > img {
+        display: block;
+        width: 45%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .botellasignal{
+        width: 15rem !important;
+        height: 15rem !important;
+    }
+}

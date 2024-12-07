@@ -1,0 +1,388 @@
+/* General CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    text-align: center;
+    background-image: url("imagenes/image\ 1.png");
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.header-text {
+    color: white;
+    background-color: #196237;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.header-subtext {
+    color: white;
+    background-color: #0389445e;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 0rem !important;
+}
+
+.header img {
+    max-width: 100%;
+}
+
+.benefits,
+.materials {
+    margin-top: 120px;
+}
+
+.benefits p,
+.materials p {
+    padding: 10px;
+}
+
+.benefits-list,
+.materials-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.material {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.benefit:hover,
+.material:hover{
+    background-color: #0eb45370;
+    color: white;
+}
+
+
+.benefit:active,
+.material:active {
+    background-color: #0f4d21;
+    color: white;
+}
+
+.benefit img,
+.materials-list > div {
+    max-width: 100%;
+    display: block;
+    margin: 20px 0px;
+}
+
+.texto {
+    color: #196237;
+    font-size: 20px;
+    text-align: center;
+}
+
+.benefit-subtext {
+    color: #196237;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.numero {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 400px;
+}
+
+.numero-contenedor {
+    margin-left: 1rem;
+    background-color: #196237;
+    border-radius: 400px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.fondo-img {
+    background-color: #196237;
+    border-radius: 10px;
+    min-width: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-color {
+    min-width: 90%;
+    max-width: 400px;
+    min-height: 250px;
+    max-height: 450px;
+    border-radius: 10px;
+    padding: 20px;
+    object-fit: contain;
+}
+
+.verde {
+    color: green;
+}
+
+.acciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.acciones-sub {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.benefit-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.benefit-contenedor > img {
+    width: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.material-Pet,
+.material-Aluminio,
+.material-Carton,
+.material-Ped,
+.material-Vidrio,
+.material-Hojalata {
+    height: 250px;
+    background-size: contain;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.material-Pet {
+    background-image: url("imagenes/Botella-verde.svg");
+}
+
+.material-Pet:hover {
+    background-image: url("imagenes/Botella-Blanca.svg");
+}
+
+.material-Ped {
+    background-image: url("imagenes/Ped-Verde.svg");
+}
+
+.material-Ped:hover {
+    background-image: url("imagenes/Ped-Blanco.svg");
+}
+
+.material-Carton {
+    background-image: url("imagenes/carton-verde.svg");
+}
+
+.material-Carton:hover {
+    background-image: url("imagenes/carton-blanco.svg");
+}
+
+.material-Vidrio {
+    background-image: url("imagenes/Vidrio-Verde.svg");
+}
+
+.material-Vidrio:hover {
+    background-image: url("imagenes/Vidrio-Blanco.svg");
+}
+
+.material-Aluminio {
+    background-image: url("imagenes/Aluminio-Verde.svg");
+}
+
+.material-Aluminio:hover {
+    background-image: url("imagenes/Aluminio-Blanco.svg");
+}
+
+.material-Hojalata {
+    background-image: url("imagenes/Hojalata.svg");
+}
+
+.material-Hojalata:hover {
+    background-image: url("imagenes/Hojalata-Blanca.svg");
+}
+
+.benefit-contenedorP {
+    width: 100%;
+}
+
+.benefit-contenedorN {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.benefit{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 65%;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header,
+    .materials {
+        width: 100%;
+    }
+
+    .materials-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .benefits-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .material {
+        width: 45%;
+        max-width: 300px;
+    }
+
+    .benefit-contenedorP {
+        width: 60%;
+    }
+
+    .benefit-contenedorN {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .benefit-contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+    }
+
+    .benefit-contenedor > img {
+        width: 40%;
+        object-fit: contain;
+    }
+
+    .benefit {
+        width: 100%;
+        text-align: left;
+    }
+
+    .acciones-imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .acciones-imagenes > img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        object-fit: cover;
+    }
+
+    .acciones-imagenes > p {
+        width: 95%;
+        text-align: left;
+        align-self: center;
+    }
+
+    .acciones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    .contenedorP {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .benefit{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 65%;
+        border-radius: 5px;
+    }
+
+    .benefits > p {
+        width: 100%;
+        text-align: center;
+        font-weight: 800;
+        font-size: 24px;
+    }
+
+    .benefit-subtext .contenedorimg {
+        width: 50%;
+    }
+
+    .benefit-subtext {
+        text-align: start;
+    }
+}

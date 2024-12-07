@@ -1,0 +1,221 @@
+/* General CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    text-align: center;
+    background-image: url("imagenes/image 27.png");
+    background-size: cover;
+    height: 80vh;
+    padding: 20px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.header-text {
+    color: white;
+    background-color: #038944;
+    border-radius: 15px;
+    width: 45%;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-subcontainer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header-subtext {
+    color: #038944;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.header-subtext2 {
+    color: #038944;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-right: 600px;
+}
+
+.boton-conf {
+    text-align: center;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.boton {
+    background-color: #038944; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.boton:hover {
+    background-color: #37be79; /* Cambia el color al pasar el ratón */
+}
+
+.benefit-subtext, .benefit-subtext2, .benefit-subtext3 {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+.benefit-subtext2 {
+    color: #196237;
+    padding-right: 20px;
+    font-size: 26px;
+}
+
+.contenedorP {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contenedorimg, .contenedorimg2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.contenedorimg2 {
+    justify-content: flex-start;
+}
+
+.img-color2 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.verde {
+    color: green;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header,
+    .materials {
+        width: 100%;
+    }
+    .materials-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .benefits-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .material {
+        width: 45%;
+        max-width: 300px;
+    }
+
+    .benefit-contenedorP {
+        width: 60%;
+    }
+
+    .benefit-contenedorN {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .benefit-contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+    }
+
+    .benefit-contenedor > img {
+        width: 40%;
+        object-fit: contain;
+    }
+
+    .benefit {
+        width: 100%;
+        text-align: left;
+    }
+
+    .acciones-imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Adaptaciones específicas para pantallas más pequeñas */
+@media (max-width: 767px) {
+    .header-subtext2 {
+        padding-left: 20px;
+    }
+
+    .contenedorP {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorimg, .contenedorimg2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .benefit-subtext2 {
+        padding-right: 20px;
+        font-size: 22px;
+    }
+
+    .boton-conf {
+        padding-left: 20px;
+    }
+
+    .header-text {
+        width: 90%;
+        height: auto;
+    }
+}

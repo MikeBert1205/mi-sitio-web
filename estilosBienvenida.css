@@ -1,0 +1,20 @@
+.card {
+    margin-bottom: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+.card-img-top {
+    border-top-left-radius: 15px; /* Bordes redondeados en la imagen */
+    border-top-right-radius: 15px;
+}
+.row {
+    justify-content: center; /* Centra las tarjetas en la fila */
+}
+.col-md-6 {
+    display: flex;
+    justify-content: center; /* Centra la tarjeta dentro de la columna */
+}
+
+.card-body {
+    background-color: #E8E8E8;
+}
